@@ -1,2 +1,2 @@
 # michaelmadr.github.io
-My website!
+[My website!](michaelmadr.github.io)
