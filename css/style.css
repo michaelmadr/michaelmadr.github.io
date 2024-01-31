@@ -1,4 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 90vh;
     font-family: "Quicksand",sans-serif;
     background-color: rgb(236, 253, 255);
     margin: 0;
@@ -7,6 +11,7 @@ body {
 h1 {
     text-align: center;
     font-family: Chicle, sans-serif;
+    letter-spacing: 4px;
 }
 
 nav {
@@ -37,29 +42,32 @@ nav a:hover {
     background-color: rgba(211, 223, 176, 0.461)
 }
 
-#main hr {
+hr {
     border-color: rgb(77,93,83);
     border-style:dashed;
 }
 
 #me {
+    width: 25%;
     display: block;
     border: 4px solid beige;
     border-radius: 10px;
     box-shadow: 6px 6px 12px rgba(0,0,0,0.3);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 #grass img{
     position: absolute;
     top: 28px;
+    left: 25px;
 }
 
 #cat img{
     position: absolute;
     top: 12px;
+    left: 15px;
 }
 
 a {
@@ -102,8 +110,14 @@ p {
     font-weight: lighter;
 }
 
+#welcome h2 {
+    margin-top: 0px;
+    font-size:250%;
+    align-self: center;
+}
+
 #main {
-    width: 100%;
+    width: fit-content;
     background-color: rgb(236, 253, 255);
 }
 
@@ -118,9 +132,13 @@ h3{
 }
 
 .three-col {
+    margin-left: 50px;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-bottom: 20px;
+    justify-self: center;
+    justify-items: center;
 }
 
 .one-col {
@@ -131,22 +149,41 @@ h3{
 }
 
 .card {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    justify-content: center;
     width: 90%;
     background-color: rgb(246, 246, 231);
     box-shadow: 6px 6px 12px rgba(0,0,0,0.3);
+    height: fit-content;
 }
 
 dl{
-    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    column-gap: 5px;
+    padding: 5px;
+
 }
+
+dd {
+    margin-left: 0px;
+    justify-self: center;
+}
+
+
+
 
 form {
     display: block;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
+margin-top: auto;
     width: 100%;
     display: flex;
     justify-content: center;
